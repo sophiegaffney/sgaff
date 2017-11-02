@@ -26,3 +26,14 @@
     color: white;
 }
 .larger-image {width:100%;}
+
+body {
+  background-color: #F5F5DC;
+}
+p {
+  font-size: 30px;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+}
