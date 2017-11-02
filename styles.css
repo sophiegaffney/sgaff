@@ -44,3 +44,10 @@ p {
     padding-right:60%;
       padding-top: 5%;
   }
+
+h2 {font-size: 30px;
+text-align: center;
+padding-left: 15%;
+padding-right: 15%;
+padding-top: 5%;  
+}
