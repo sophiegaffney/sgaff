@@ -38,6 +38,22 @@ p {
   padding-top: 5%;
 }
 
+h1 {font-size: 30px;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%; }
+body {
+  background-color: #F5F5DC; 
+}
+  .image_01 { 
+  width: 20px; 
+  height: 20px; 
+  padding-left: 10%;
+  padding-right:60%;
+  padding-top: 5%;
+  }
+
   image { width: 20px; 
   height: 20px; 
   padding-left: 10%;
