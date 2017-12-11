@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="styles.css">
 
 <div class="topnav" id="myTopnav">
@@ -12,7 +13,10 @@
   <h1> Gallery </h1>
     
     <br>
-    
+    <br>
+
+ <!---
+
 <div class="floating-box"><img class="galleryimg" src="dinoprintjumper.jpeg"></div>
 <div class="floating-box"><img class="galleryimg" src="dinosaursleepsuit.jpeg"></div>
 <div class="floating-box"><img class="galleryimg" src="soldiersvest.jpeg"></div>
@@ -20,5 +24,99 @@
 <div class="floating-box"><img class="galleryimg" src="organicbodysuit.jpeg"></div>
 <div class="floating-box"><img class="galleryimg" src="polarbearpuffer.jpeg"></div>
 
-  
-</body>
+---->
+    
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="dogs.jpg" style="width:100% center">
+    <div class="text">Animal Print Coat</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="fireengin.jpg" style="width:50% center">
+    <div class="text">Hatley Firetrucks and Dalmatians Raincoat</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="knitwear.jpg" style="width:50% center">
+    <div class="text">Polar Friends Jumper</div>
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="sleepsuits.jpg" style="width:50% center padding-left: 25%">
+    <div class="text">Soldiers Sleepsuit</div>
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="pjs.jpg" style="width:50% center">
+    <div class="text">Reindeer Pyjamas</div>
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="penguin.jpg" style="width:50% center" >
+    <div class="text">Penguin Sleepsuit</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+    <br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+
+</div>
+    
+    <br>
+    
+    <p8> All images in this gallery have been taken from John Lewis</p8>
+    <br>
+    <br>
+    
+    
+    <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+    </script>
