@@ -42,15 +42,21 @@ body {
   background-color: #F5F5DC;
 }
 
-
 p {
-  font-size: 30px;
-  text-align: center;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 10%;
+  font-size: 15px;
+  text-align:center;
     font-family: sans-serif, verdana;
+    background-color: lightgrey;
+    width: 300px;
+    height: auto;
+    border: 10px solid #333;
+    padding-left: 70px;
+    padding-right:10px; 
+    padding-bottom:10px;
+    padding-top: 10px;
+    margin: 26px;
 }
+
 
 p2 {font-size: 15px;
 text-align: center; 
